@@ -1,0 +1,354 @@
+/* General styling */
+* {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-text-fill: #333333;
+}
+
+/* Main root pane */
+.root {
+    -fx-background-color: #2a2a2a;
+}
+
+/* Sidebar Menu */
+.sidebar {
+    -fx-background-color: #2a2a2a;
+    -fx-pref-width: 250px; /* Increase the width of the sidebar if needed */
+    -fx-padding: 30px 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 5, 0.5, 0, 1);
+}
+
+.sidebar .label {
+  	 -fx-text-fill: white; /* Text color */
+    -fx-font-size: 24px; /* Font size */
+    -fx-font-weight: bold; /* Bold text */
+    -fx-alignment: center; /* Centers the label content */
+    -fx-wrap-text: true; /* Allows the text to wrap */
+    -fx-text-alignment: center; /* Centers text alignment */
+    -fx-padding: 20px; /* Adds padding around the label */
+    -fx-background-color: #2a2a2a; /* Background color for contrast */
+}
+
+.sidebar .button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 20px; /* Larger font for buttons */
+    -fx-padding: 15px 30px; /* Increase padding to make buttons larger */
+    -fx-alignment: center;
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 3, 0.2, 0, 1);
+}
+
+.sidebar .button:hover {
+    -fx-background-color: #1d1d1d;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 4, 0.2, 0, 2);
+}
+
+.sidebar .button:focused {
+    -fx-background-color: #1d1d1d;
+}
+
+/* Sidebar menu items */
+.sidebar .menu-item {
+    -fx-padding: 15px 30px; /* Increase padding for menu items */
+    -fx-text-fill: #ffffff;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+.sidebar .menu-item:hover {
+    -fx-background-color: #1d1d1d;
+}
+
+/* Header */
+.header {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20px;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 0 0 1px 0;
+    -fx-font-weight: bold;
+}
+
+.header .label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a7cff;
+}
+
+/* Section containers */
+.section {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 20px;
+    -fx-spacing: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.3, 0, 2);
+    -fx-margin: 20px;
+}
+
+.section .label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 10px 0;
+}
+
+/* Buttons */
+
+
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #1d62cc, #154a99);
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 4, 0.2, 0, 2);
+}
+
+.button:pressed {
+    -fx-background-color: #154a99;
+}
+
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* ListView styling */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+.list-cell {
+    -fx-padding: 10px;
+    -fx-border-color: #f4f4f4;
+    -fx-border-width: 0 0 1px 0;
+    -fx-font-size: 14px;
+}
+
+.list-cell:hover {
+    -fx-background-color: #e6f0ff;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #2a7cff;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+
+
+/* TextField styling */
+.text-field {
+	-fx-background-color: #60656b;
+    -fx-border-color: #2a2a2a;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #154a99;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0.2, 0, 1);
+}
+
+/* Pane styling */
+.pane {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #dddddd;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.3, 0, 2);
+}
+
+/* HBox styling */
+.hbox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+/* VBox styling */
+.vbox {
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}
+
+/* GridPane styling */
+.grid-pane {
+    -fx-hgap: 10px;
+    -fx-vgap: 10px;
+    -fx-padding: 20px;
+}
+
+/* Info pane card styling */
+.card {
+    -fx-background-color: linear-gradient(to bottom, #ffffff, #f9f9f9);
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0.3, 0, 2);
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ComboBox base style */
+.combo-box {
+    -fx-background-color: #1f1f1f;
+    -fx-border-color: #555;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-text-fill: white;
+}
+
+/* ComboBox list cells (dropdown items) */
+.combo-box .list-cell {
+    -fx-background-color: #1f1f1f;
+    -fx-text-fill: white;
+    -fx-padding: 5;
+}
+
+/* Remove blue highlight from selection */
+.combo-box .list-cell:filled:selected, .combo-box .list-cell:filled:hover {
+    -fx-background-color: #444; /* Custom background for selection and hover */
+    -fx-text-fill: white;
+}
+
+/* Remove focus ring */
+.combo-box:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+
+
+/* Base style for the TextArea */
+.text-area {
+    -fx-background-color: #1f1f1f; /* Outer background color */
+    -fx-border-color: #555;        /* Border color */
+    -fx-border-radius: 5;          /* Rounded corners */
+    -fx-background-radius: 5;
+}
+
+/* Style the content area inside the TextArea */
+.text-area .content {
+    -fx-background-color: #1f1f1f; /* Inner background color */
+    -fx-text-fill: white;          /* Text color */
+    -fx-padding: 10;               /* Inner padding */
+}
+
+/* Style the prompt text */
+.text-area .content .text {
+    -fx-fill: #777;                /* Prompt text color */
+}
+
+/* Remove focus highlight */
+.text-area:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+
+
+
+
+
+
+/* Prevent white background for empty cells */
+.list-cell:empty {
+    -fx-background-color: #252526; /* Same as the ListView background */
+    -fx-text-fill: transparent; /* Hide any placeholder text */
+}
+
+.list-cell:empty:hover {
+    -fx-background-color: #252526; /* Maintain same background on hover */
+}
+
+/* ListView container styling */
+.list-view {
+    -fx-background-color: #252526; /* Slightly lighter dark gray */
+    -fx-border-color: #333333;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+}
+
+/* Individual ListCell styling */
+.list-cell {
+    -fx-background-color: #252526;
+    -fx-text-fill: #d4d4d4; /* Light gray text */
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+    -fx-border-color: #333333;
+    -fx-border-width: 0 0 1px 0; /* Subtle bottom border */
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #3c3c3c; /* Darker hover effect */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #007acc; /* Highlighted blue */
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+/* Context Menu styling */
+.context-menu {
+    -fx-background-color: #252526;
+    -fx-border-color: #333333;
+}
+
+.menu-item {
+    -fx-background-color: #252526;
+    -fx-text-fill: #d4d4d4; /* Light gray text */
+    -fx-padding: 5px 10px;
+    -fx-font-size: 13px;
+}
+
+.menu-item:hover {
+    -fx-background-color: #3c3c3c; /* Hover effect for menu items */
+    -fx-text-fill: #ffffff;
+}
+
+.menu-item:focused {
+    -fx-background-color: #007acc;
+    -fx-text-fill: #ffffff;
+}
+
+
+
+
+
+
+
